@@ -1,0 +1,11 @@
+const express = require("express");
+const athController = require("../../controllers/ath.controller");
+const router = express.Router();
+const {Handelerror} = require("../../ultils/hadellerror");
+const { checkacesstoken } = require("../../midelware/check.user");
+router.post('/register',Handelerror(athController.register));
+router.post('/login',Handelerror(athController.login));
+router.use(checkacesstoken);
+router.post('/logout',Handelerror(athController.logout));
+router.post('/hadelrefeshtoken',Handelerror(athController.hadelRefeshtoken));
+module.exports = router;

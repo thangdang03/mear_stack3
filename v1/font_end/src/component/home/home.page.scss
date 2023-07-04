@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Open+Sans&display=swap');
+
+.Header{
+    display: flex;
+    justify-content: center;
+    background: #d0011b;
+    .nested{
+        height: 90px;
+        padding: 10px;
+        width: 1200px;
+        position: relative;
+        .logout{
+            position: absolute;
+            right: 20px;
+            top: 41px;
+            font-size: 19px;
+            background: #d0011b;
+            border: 1px solid;
+            padding: 7px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form{
+            svg{
+                position: absolute;
+                cursor: pointer;
+                bottom: 21px;
+                z-index: 1;
+                left: 780px;
+            }
+        }
+        #keySearch{
+            bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 800px;
+            height: 35px;
+            position: absolute;
+            padding-left: 10px;
+        }#keySearch:focus{
+            border: none;
+        }
+        ul{ 
+            position: absolute;
+            .icon{
+                font-family: 'Inter', sans-serif;
+                font-size: 20px;
+            }
+            a{  
+
+                font-size: 18px;
+                text-decoration: none;
+                color: black;
+                text-transform: capitalize;
+                margin: 0 25px;
+            }
+            a:hover{
+                border-bottom: 2px solid;
+
+            }
+        }
+    
+        .inputath{
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            font-size: 20px;
+            a{
+                padding: 10px 10px;
+                text-decoration: none;
+                text-transform: capitalize;
+                color: black;
+            }
+            a:hover{
+                border-bottom: 2px solid;
+            }
+            .active{
+                border-bottom: 2px solid;
+            }
+            
+        }
+    }
+   
+}
+
+
+.content{
+    min-height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .flex{
+        width: 1200px;
+        margin: 30px 0px;
+        p{
+    font-size: 18px;
+    font-weight: 600;
+        }
+        .grid_contain{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(5, 232px);
+            grid-template-rows: repeat(4, 273px);
+            gap: 10px;
+            .grid_item:hover{
+                border: 1px solid #d0011b;
+            }
+            .grid_item{
+                cursor: pointer;
+                position: relative;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 4px;
+                img{
+                   border-radius: 4px 4px 0 0;
+
+                    width: 100%;
+                    height: 60%;
+                    object-fit: cover;
+                }
+                .text{
+                    padding: 10px;
+                    
+                    p{
+                        position: absolute;
+                        display: inline-block;
+                        margin-top: 20px;
+                        bottom: 10px;
+                    }
+                    p:nth-child(2){
+                        right: 10px;
+                        color: #d0011b;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+#footer{
+    background-color: #23242A;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    position: relative;
+}
+
+.information_img{
+    position: absolute;
+    top: 20px;
+    left: 157px;
+}
+.information{
+    width: 1200px;
+    color: white;
+    height: 169px;
+    margin: 60px 0px;
+    display: grid;
+    grid-template-columns: 480px 180px 480px;
+    column-gap: 40px;
+}
+.contact p{
+    padding: 16px 0px;
+}
+.contact a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+.contact img{
+    display: block;
+    margin-top: 20px;
+}
+.introductio{
+    text-align: left;
+}
+
+.introductio > a{
+    text-decoration: none;
+    padding: 17px 0px;
+    display: block;
+    color: white;
+    font-size: 17px;
+}
+.phone {
+    width: 447px;
+    background: #23242A;;
+    color: #d0011b;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 7px;
+    margin: 17px 0px;
+    text-align: center;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+.phone:hover  {
+    color: white;
+}
+.phone span{
+    padding-left: 5px;
+}
+
+.salon span{
+    padding-left: 5px;
+}
+
+.salon{
+        cursor: pointer;
+        width: 447px;
+        background: orange;
+        color: white;
+        height: 42px;
+        text-align: center;
+        line-height: 42px;
+        border-radius: 7px;
+}

@@ -1,0 +1,31 @@
+.container_edit{
+    display: flex;
+    justify-content: center;
+    .edit_header{
+        width: 1200px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        background: #d0011b;
+        position: relative;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:nth-of-type(2){
+            position: absolute;
+             right: 53px;
+            top: 7px;
+        }
+        
+    
+
+    }
+    table{
+        width: 100%;
+        padding: 10px;
+         input{border: none;
+            cursor: pointer;
+        }   
+    }
+}
